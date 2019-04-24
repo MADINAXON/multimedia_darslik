@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Variables</title>
+	<style type="text/css">
+	   div{
+		  padding: 8px;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+        }
+        
+        p{
+            text-align: justify;
+        }
+        
+		.container{
+			width: auto;
+			height: auto;
+		}
+		.header{
+			padding: 10px;
+			background-color: #4Ef2F0;
+		}
+		code{
+			background-color: rgba(0,0,0,0.08);
+			padding: 4px;
+			border: 2px solid rgba(0,0,0,0.1);
+			border-radius:15px;
+		}
+	</style>
+</head>
+    
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Мобил қурилмалар учун операцион тизимлар</h2>
+		</div>
+       <!-- header end-->
+        
+		<div class="body">
+            <h4>Режа</h4>
+			<ol>
+                <li>Мобил қурилмаларда операцион тизим тушунчаси
+</li>
+                <li>Мобил қурилмаларнинг операцион тизимлар платформаси
+</li>
+                <li>Андроид операцион тизими ва унинг архитектураси
+</li>
+                <li>Андроид операцион тизими хизматлари
+</li>
+                <li>Андроид операцион тизими ривожланиши ва унинг бошқа операцион тизимлардан фарқи
+</li></ol><br><br>
+                <h4>Мобил операцион тизимлар ва уларнинг ривожланиш тарихи</h4>
+                <p>
+                    Мобил операцион тизимлар – бу мобил қурилмалар (смартфонлар, таблетлар, PDA ва бошқа мобил қурилмалар) ни бошқариш учун мўлжалланган тизимлар ҳисобланади
+                </p>
+                <p>
+                    Мобил операцион тизимлар <b>иккита асосий платформа</b> яъни “user-facing” дастурий таъминот платформаси ва қурилмаларни бошқариш учун мўлжалланган қуйи сатҳдаги реал-вақт операцион тизидан иборат бўлади.
+                </p>
+                <h4>Мобил қурилмаларга дастурий воситалар яратиш учун платформалар</h4>
+                <table>
+                <tr>
+                    <th>Номи</th>
+                    <th>Дастурлаш тили</th>
+                </tr>
+                <tr>
+                    <td>Android</td>
+                    <td>Java, қисман  C/C++</td>
+                </tr>
+                <tr>
+                    <td>BlackBerry</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>iOS SDK</td>
+                    <td>Objective – C, Objective Pascal</td>
+                </tr>
+                <tr>
+                    <td>Java ME</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>Windows Phone (WP)</td>
+                    <td>Visual C++, Visual C#, Visual Basic</td>
+                </tr>
+                <tr>
+                    <td>Marmalade</td>
+                    <td>C/C++</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>FireFox OS</td>
+                    <td>HTML5, CSS, JavaScript</td>
+                </tr>
+                </table>
+                
+                <h4>Android операцион тизими</h4>
+                <p>
+                    <b>Android</b> – бу мобил қурилмалар учун мўлжалланган турли ҳил иловалар ва хизматларни ўз ичига олган операцион тизим.
+                </p>
+                <p>
+                    <b>Android</b> архитектураси Java асосида қурилган бўлиб, андроид тизим учун барча илова ва дастурлар Java дастурлаш тили ёрдамида яратилади.
+                </p>
+                
+                <h4>Android архитектураси</h4>
+                <p>
+                    <b>Linux kernel</b> – бу Android тизимининг ядроси ҳисобланади ва <b><u>115 patch</u></b> дан иборат. Бу асосан тизим функционалини яъни, процесслар бошқаруви, хотирани бошқариш, қурилмаларни (дисплей, камера, клавиатура ва ҳ.к. лар) бошқариш учун хизмат қилади. Бундан ташқари тармоқ компоненталарини, қурилмалар драйверларини бошқаради.
+                </p>
+                <p>
+                    <b>Libraries</b> – Иловаларни бошқариш учун зарур бўлган кутубхоналардан иборат. Бунга <b> Web browser engine WebKit,</b> маълумотларни сақлаш ва иловалараро маълумотларни алмашиш учун <b>SQLite</b> database кутубхонаси, audio ва video маълумотларни бошқариш учун<b> Media Framework,</b> интернет хавфсизлиги учун <b>SSL</b> кутубхонаси, графикани бошқариш учун <b>OpenGL, </b>touchscreen хизмати учун <b>Surface Manager</b> ва ҳ.к. лар
+                </p>
+                <p>
+                    <b>Android Runtime– Dalvik Virtual Machine </b> компонентини бошқариш учун ишлатиладиган кутубхона ҳисобланади. Бунда ҳар бир илованинг ўз процессида ишлаши таъминланади. Ўз навбатида бу кутубхоналар иловалар яратишда Java дастурлаш тилини ишлатиш учун ҳам ёрдамберади.
+                </p>
+                <p>
+                    <b>Application Framework</b> – юқори сатҳдаги Java синф ва пакетлар жамланмасидир. Бунда тайёр хизматлардан фойдаланиш мумкин (Broadcast Receivers, Content Providers, Camera Control ва ҳ.к. лар)
+                </p>
+                
+                
+                
+            
+		</div>
+	</div>
+</body>
+</html>

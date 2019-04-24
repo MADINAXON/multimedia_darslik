@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:background="#9966CC">
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="MAIN"
+            />
+        <item
+            android:id="@+id/dars1"
+            android:icon="@drawable/ic_menu_send"
+            android:title="1-dars" />
+        <item
+            android:id="@+id/dars2"
+            android:icon="@drawable/ic_menu_send"
+            android:title="2-dars" />
+        <item
+            android:id="@+id/dars3"
+            android:icon="@drawable/ic_menu_send"
+            android:title="3-dars" />
+        <item
+            android:id="@+id/dars4"
+            android:icon="@drawable/ic_menu_send"
+            android:title="4-dars" />
+        <item
+            android:id="@+id/dars5"
+            android:icon="@drawable/ic_menu_send"
+            android:title="5-dars" />
+        <item
+            android:id="@+id/dars6"
+            android:icon="@drawable/ic_menu_send"
+            android:title="6-dars" />
+        <item
+            android:id="@+id/dars7"
+            android:icon="@drawable/ic_menu_send"
+            android:title="7-dars" />
+        <item
+            android:id="@+id/dars8"
+            android:icon="@drawable/ic_menu_send"
+            android:title="8-dars" />
+        <item
+            android:id="@+id/dars9"
+            android:icon="@drawable/ic_menu_send"
+            android:title="9-dars" />
+        <item
+            android:id="@+id/dars10"
+            android:icon="@drawable/ic_menu_send"
+            android:title="10-dars" />
+        <item
+            android:id="@+id/dars11"
+            android:icon="@drawable/ic_menu_send"
+            android:title="11-dars" />
+
+        <item
+            android:id="@+id/dars12"
+            android:icon="@drawable/ic_menu_send"
+            android:title="12-dars" />
+        <item
+            android:id="@+id/dars13"
+            android:icon="@drawable/ic_menu_send"
+            android:title="13-dars" />
+        <item
+            android:id="@+id/dars14"
+            android:icon="@drawable/ic_menu_send"
+            android:title="14-dars" />
+        <item
+            android:id="@+id/dars15"
+            android:icon="@drawable/ic_menu_send"
+            android:title="15-dars" />
+        <item
+            android:id="@+id/dars16"
+            android:icon="@drawable/ic_menu_send"
+            android:title="16-dars" />
+
+    </group>
+
+
+
+</menu>

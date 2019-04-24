@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variables</title>
+	<style type="text/css">
+	   div{
+		  padding: 8px;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+        }
+        
+        p{
+            text-align: justify;
+        }
+        
+		.container{
+			width: auto;
+			height: auto;
+		}
+		.header{
+			padding: 10px;
+			background-color: #4Ef2F0;
+		}
+		code{
+			background-color: rgba(0,0,0,0.08);
+			padding: 4px;
+			border: 2px solid rgba(0,0,0,0.1);
+			border-radius:15px;
+		}
+	</style>
+</head>
+    
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Иловаларда ҳодисалар ва жараёнлар (Activities, fragments and Intents)</h2>
+		</div>
+       <!-- header end-->
+        
+		<div class="body">
+            <h4>Режа</h4>
+			<ol>
+                <li>Андроид иловаларида ҳодисалар ва жараёнлар. 
+                    Activities,
+                    Intents
+                    .</li>
+                <li>Activity яшаш цикли
+                </li>
+                <li>dialog ойналарда activity ларни ҳосил қилиш
+                </li>
+                <li>Intent лар ва улардан фойдаланиш. Жараёнларни бир – бири билан боғлаш
+                </li>
+                <li>Fragment лардан фойдаланиш
+                </li>
+            </ol>
+                <br><br>
+                <h4>Activity нима? </h4>
+            
+            <p>Фойдаланувчи интерфейсини бошқарувчи асосий .java кенгайтмали файл бўлиб, Activity синфидан ворис олган ҳолда яратилади. </p>
+            <p>Агар яратилган илова бир нечта activity дан иборат бўлса, у ҳолда битта activityни (файлни) асосий деб кўрсатиб қўйилиши лозим ва бу activity илова ишга туширилганда чақирилади.
+            </p>
+            <p>Одатда activity дастур интерфейсини ўзида мужассамлаштирган XML файлни res/layout папкасидан чақириб олади. Бизнигн мисолимизда activity_main.xml файли қуйидагича чақириляпти:
+                </p>
+            <b>setContentView (R.layout.activity_main);</b>
+            <p>Иловада ишлатилаётган ҳар бир activity AndroidManifest.xml файлида қуйидагича эълон қилиб қўйилиши лозим:
+            </p>
+            <ul>
+                <li>onCreate() — activity ишга тушганда биринчи марта чақирилади
+                </li>
+                <li>onStart() — activity натижаси фойдаланувчига кўринганда чақирилади</li>
+                <li>onResume() — activity фойдаланувчи томонидан ишлатилаётганда чақирилади
+                </li>
+                <li>onPause() — жорий activity фаолияти вақтинчалик тўхтатилиб бошқа activity фаоллаштирилганда чақирилади
+                </li>
+                <li>onStop() — activity фойдаланувчига кўринмай қолганида чақирилади
+                </li>
+                <li>onDestroy() — activity тўхтатилган вақтда чақирилади
+                </li>
+                <li>onRestart() — activity иш фаолияти тўхтатаилиб қайта ишга туширилганида чиқарилади
+                </li>
+            </ul>
+            
+            <h4>Activity яшаш цикли визуал кўринишда</h4>
+
+            <h5 style="align-content: space-arounds"> <img src="1.png" width="100%" height="100%"></h5>
+            <h4>Activity ларни бир – бирига боғлаш</h4>
+            <li>Одатда иловалар бир нечта activity лардан иборат бўлади;
+                </li>
+            <li>Демак биз бир ҳолатдан иккинчи ҳолатга (илованинг бир ойнасидан иккинчи ойнасига) ўтиш зарур бўлади;
+            </li>
+            <li>Android иловаларида, activity лараро муносабатни ўрнатиш учун intent лардан фойдаланилади.
+</li>
+            <li>Одатда ҳар бир activity битта layout ни (xml файлни) фойдаланувчига кўрсатиб бериш учун хизмат қилади
+</li>
+            <h4>Intent дан натижа (бирон – бир хабар) қайтариш</h4>
+            <li>startActivity() методи керакли activity ни чақиради, лекин натижа (қиймат) қайтармайди.
+</li>
+            <li>Мисол учун сизнинг дастурингизда user name ва password киритиш майдони бор.</li>
+            <li>Ушбу ҳолатда фойдаланувчи ойнасига қандайдир хабар ёки қиймат қайтариш лозим бўлади .
+</li>
+            <li>Демак бир activity дан иккинчи activity га қиймат жўнатиш учун, startActivityForResult() методидан фойдаланилади.
+</li>
+              
+                
+                
+                
+            
+		</div>
+	</div>
+</body>
+</html>

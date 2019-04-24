@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variables</title>
+	<style type="text/css">
+	   div{
+		  padding: 8px;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+        }
+        
+        p{
+            text-align: justify;
+        }
+        
+		.container{
+			width: auto;
+			height: auto;
+		}
+		.header{
+			padding: 10px;
+			background-color: #4Ef2F0;
+		}
+		code{
+			background-color: rgba(0,0,0,0.08);
+			padding: 4px;
+			border: 2px solid rgba(0,0,0,0.1);
+			border-radius:15px;
+		}
+	</style>
+</head>
+    
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Андроид да фойдаланувчи интерфейси. View ва Layout лар </h2>
+		</div>
+       <!-- header end-->
+        
+		<div class="body">
+            <h4>Режа</h4>
+			<ol>
+                <li>GUI компоненталари</li>
+                <li>Views ва ViewGroup лардан фойдаланиш</li>
+                <li>Layout лар</li>
+                <ul>
+                    <li>LinearLayout</li>
+                    <li>ConstraintLayout
+</li>
+                    <li>TableLayout
+</li>
+                    <li>FrameLayout
+</li>
+                    <li>Guideline (gorizantal)
+</li>
+                    <li>Guideline (vertical)
+</li>
+                    
+                </ul>
+                
+            </ol>
+                <br><br>
+                <h4>GUI компоненталари </h4>
+            
+            <p>Activity синфининг setContentView() методи орқали керакли XML файл яъни дастур интерфейси қуйидагича чақирилади:
+            </p>
+            <i>@Override</i><br>
+            <i>public void onCreate(Bundle savedInstanceState) { </i><br>
+            <i>super.onCreate(savedInstanceState);</i><br>
+            <i>setContentView(R.layout.main);} </i><br>
+           <p>Демак дастур компиляцияси жараёнида XML файлда жойлашган ҳар бир элемент ва унинг атрибутига мос Android GUI class яратилади. Ушбу операциядан кейингина activity ишга туширилганда илова интерфейси чақирилади.
+            </p>
+            
+            
+            <h4>LAYOUT ЛАР ВА УЛАРДАН ФОЙДАЛАНИШ</h4>
+            <table>
+                <tr>
+                    <td>layout_width
+</td>
+                    <td>Specifies the width of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_height</td>
+                    <td>Specifies the height of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_marginTop</td>
+                    <td>Specifies extra space on the top side of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_marginBottom</td>
+                    <td>Specifies extra space on the bottom side of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_marginLeft</td>
+                    <td>Specifies extra space on the left side of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_marginRight</td>
+                    <td>Specifies extra space on the right side of the View or ViewGroup</td>
+                </tr>
+                <tr>
+                    <td>layout_gravity</td>
+                    <td>Specifies how child Views are positioned</td>
+                </tr>
+                <tr>
+                    <td>layout_weight</td>
+                    <td>Specifies how much of the extra space in the layout should be
+allocated to the View</td>
+                </tr>
+                <tr>
+                    <td>layout_x</td>
+                    <td>Specifies the x-coordinate</td>
+                </tr>
+                <tr>
+                    <td>layout_y</td>
+                    <td>Specifies the y-coordinate</td>
+                </tr>
+            </table>
+            <h4>AbsoluteLayout</h4>
+            <p>Мисолда кўринадики, берилган Button компоненталари android_layout_x ва android_layout_y атрибутлари қиймати асосида жойлашади.
+                Лекин битта муаммо бор. AbsoluteLayout асосида яратилган фойдаланувчи интерфейслари Андроид ОТ нинг кейинги версиялари ва экран турига қараб хатоликлар келиб чиқиши мумкин. 
+            </p>
+            <h4>TableLayout</h4>
+            <p> TableLayout  - компоненталарнинг жадвал асосида жойлашувидир.
+                Бунда "TableRow" элементи жадвал қаторини белгилаб беради.
+                Ҳар бир қатор бир ёки бир нечта компонентани ўз ичига олади.
+                Қатор узунлиги мос ҳолда компоненталар узунликлари йиғиндисидан иборат бўлади.
+            </p>
+            <h4>RelativeLayout</h4>
+            <p>RelativeLayout – бу компоненталарни бир – бирига мос (боғлиқ) ҳолда жойлаштириш учун ишлатилади. Яъни бир компонентани ўнг тарафидан (чап тарафидан, юқори қисмидан, пастки қисмидан) иккинчи компонентани жойлаштириш мумкин бўлади. 
+RelativeLayout да компоненталар қуйидаги аттрибутлар асосида бир – бири билан боғлиқ ҳолда жойлаштирилади</p>
+            <li>layout_alignParentTop</li>
+            <li>layout_alignParentLeft</li>
+            <li>layout_alignLeft</li>
+            <li>layout_alignRight</li>
+            <li>layout_below</li>
+            <li>layout_centerHorizontal</li>
+
+            <h4>FrameLayout</h4>
+            <p>FrameLayout – бу фойдаланувчи интерфейсини блоклаш (компоненталарнинг экрандан ёки фраймдан чиқиб кетмаслик ҳолати) учун ишлатилади.
+Бу layout да компоненталарни бошқариш осонроқ бўлади.</p>   
+            <h4>Display orientation</h4>
+            <p>Android тизимида икки ҳил кўринишдаги ориентация мавжуд: portrait ва landscape<br>
+Бу ориентациялар икки ҳил усул ёрдамида бошқарилади<br>
+Anchoring — экраннинг тўртта бурчаги ҳисобига компоненталарни бошқариш.<br>
+Resizing and repositioning — ориентация ҳолатига қараб турли хил layout (xml file) ларга мурожаат қилиш орқали компоненталарни экранга чиқариш<br>
+                
+                <h4>Resizing and repositioning</h4>
+            <p>Бунда ҳар бир ориентация учун алоҳида XML файл яратилади ва бу файллар бир бири билан фарқ қилиши ҳам мумкин. </p><p>
+Одатда res/layout папкасидаги XML файл (main.xml) portrait ориентацияси учун ишлайди, landscape ориентацияси учун эса res/layout-land папкаси яратилади ва ушбу папканинг ичида ҳам бир хил main.xml номли файл яратилади ва бу landscape ориентацияси учун ишлайди. </p>
+
+                
+                
+                
+            
+		</div>
+	</div>
+</body>
+</html>
